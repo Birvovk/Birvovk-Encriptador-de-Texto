@@ -1,0 +1,45 @@
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        
+    </head>
+        <header id="encabezado">
+            <img id="logo" src="imagenes/Vector.png" alt="">
+        </header>
+
+        <body class="cuerpo">
+
+            <div class="left">
+                <textarea name="ingreso" id="ingreso" cols="30" rows="1" placeholder="Ingrese su texto aqui" ></textarea>
+            </div>
+            
+            <div class="right">
+                <img src="imagenes/Muñeco.png" id="muheco">
+                <p id="mensaje1">Ningun mensaje fue encontrado</p>
+                <textarea name="codificado" id="codificado" cols="50" rows="40" placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+                <input type="button" onclick="copiar ()" value="Copiar" id="copiar">
+               
+        <main>
+                </div>
+                <p class="aviso">&#9888; Solo letras minúsculas y sin acentos</p>
+                
+                <div class="buttons">
+                
+                <input type="button" onclick="encriptar()" value="Encriptar" id="boton-izquierdo">
+                <input type="button" onclick="desencriptar()" value="Desencriptar" id="boton-derecho">
+                </div>
+               
+                <div id="emergente">
+                    <p class="mensajepop">¡Se ha Copiado el Mensaje con exito!</p>
+                </div>
+        </main>
+        </body>
+        <script src="js/encriptar.js"></script>
+        <script src="js/desencriptar.js"></script>
+        <script src="js/copiar.js"></script>
+</html>
